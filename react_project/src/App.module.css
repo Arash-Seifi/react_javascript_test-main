@@ -19,6 +19,12 @@
   .table_TableContainer {
     width: 300px !important;
   }
+  .countryItems {
+    width: 80% !important;
+  }
+  .chart_container div {
+    width: 90% !important ;
+  }
 }
 /* Global */
 @font-face {
@@ -72,7 +78,7 @@ a:hover {
 }
 .layout_mainContentContainer > main,
 .layout_mainContentContainer > aside {
-  background-color:#92d3ff;
+  background-color: #92d3ff;
   direction: rtl;
   font-family: nazanin;
   padding: 10px;
@@ -84,24 +90,19 @@ a:hover {
 }
 /* Table CSS */
 .table_TableContainer {
-  position: absolute;
+  position: relative;
   background: linear-gradient(45deg, #49a09d, #5f2c82);
-  top: 40%;
   height: auto;
   width: 700px;
-  overflow-y: scroll;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 .tablePosition {
   width: 100%;
-  height: 500px;
   left: 0;
   top: 0;
   position: relative;
 }
 table {
-  overflow: hidden;
   width: 100%;
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -129,16 +130,7 @@ tbody tr:hover {
 tbody td {
   position: relative;
 }
-tbody td:hover:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -9999px;
-  bottom: -9999px;
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: -1;
-}
+
 .filterDir {
   background-color: var(--forthColor);
   font-family: var(--mainFont);
@@ -148,7 +140,7 @@ tbody td:hover:before {
   font-size: 1.3rem;
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -2%;
   margin-left: 10px;
   transform: translate(-50%, -50%);
   margin-top: 5px;
@@ -244,12 +236,13 @@ tbody td:hover:before {
   padding: 10px 0;
   text-align: center;
   border-radius: 5px;
-  border: 1px solid black;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   font-family: var(--mainFont);
 }
-.countryItems>div {
+.countryItems > div {
   margin: 10px 0;
+  background-color: rgb(241, 241, 241);
+  border-radius: 8px;
   cursor: pointer;
 }
 .countryItemsColor {
@@ -258,8 +251,12 @@ tbody td:hover:before {
 .countryItemsColor2 {
   color: var(--thirdColor);
 }
-.chart_container div{
+.chart_container div {
   margin: 0 auto;
-  width: 700px;
-  height: 900px;
+  width: 70%;
+  height: auto;
+}
+.chart_container h3 {
+  text-align: center;
+  font-family: var(--mainFont);
 }

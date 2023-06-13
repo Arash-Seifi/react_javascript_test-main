@@ -3,7 +3,7 @@
         "id": 1,
         "name": "ارش",
         "personal_number": 10234,
-        "work_experience": "خیر",
+        "work_experience": 1,
         "Date_of_employment": 1398,
         "row": 10
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "محمد",
         "personal_number": 56981,
-        "work_experience": "بله",
+        "work_experience": 3,
         "Date_of_employment": 1399,
         "row": 20
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "name": "علی",
         "personal_number": 14985,
-        "work_experience": "خیر",
+        "work_experience": 1,
         "Date_of_employment": 1400,
         "row": 25
     },
@@ -27,16 +27,33 @@
         "id": 4,
         "name": "رضا",
         "personal_number": 91631,
-        "work_experience": "بله",
+        "work_experience": 2,
         "Date_of_employment": 1401,
         "row": 15
     },
     {
-        "id": 5,
-        "name": "ارمان",
-        "personal_number": 12411,
-        "work_experience": "بله",
-        "Date_of_employment": 1402,
-        "row": 22
+        "id": 4,
+        "name": "سینا",
+        "personal_number": 91631,
+        "work_experience": 2,
+        "Date_of_employment": 1401,
+        "row": 15
+    },
+    {
+        "id": 4,
+        "name": "محسن",
+        "personal_number": 91631,
+        "work_experience": 2,
+        "Date_of_employment": 1401,
+        "row": 15
+    },
+    {
+        "id": 4,
+        "name": "مریم",
+        "personal_number": 91631,
+        "work_experience": 2,
+        "Date_of_employment": 1401,
+        "row": 15
     }
+    
 ]

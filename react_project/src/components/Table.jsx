@@ -5,7 +5,7 @@ import data from "./tableData.json";
 // Function begins here
 function Layout() {
   // Here is a sample array of object that we use
-  const [users, setUsers] = useState(data);
+  const [users, setUsers] = useState([...data]);
   const [filterDirection, setFilterDirection] = useState("Not Sorted");
 
   // Make sorting function
@@ -14,6 +14,7 @@ function Layout() {
   // function which is called when clicked by the use on the table header
   function tableSorting(e, filterValue) {
     const copyArray = [...users]; // create a new array & not mutate state
+    setUsers([]);
     // Here we set this boolean variable true so when they click on it again iit will make the
     // list go reverse
     setSameFilter(true);
@@ -28,7 +29,7 @@ function Layout() {
     // Here is a sorting method
     // If it is the smae filtere then change toggle ascending or descending
     copyArray.sort((a, b) => {
-      if (filterValue != "name" && filterValue != 'work_experience') {
+      if (filterValue != "name") {
         if (sameFilter) {
           setFilterDirection("descending");
           setSameFilter(false);
@@ -66,7 +67,10 @@ function Layout() {
         }
       }
     });
-    setUsers(copyArray); //re-render
+    setUsers([]);
+    setTimeout(function () {
+      setUsers(copyArray); //re-render
+    }, 10);
   }
   return (
     // NAVBAR

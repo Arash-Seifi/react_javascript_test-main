@@ -26,7 +26,7 @@ function SearchBar() {
   // Our Variables
   const [country, setCountry] = useState([]);
   const [value, setValue] = useState("");
-  const [countryCode, setCountryCode] = useState("IR");
+  const [countryCode, setCountryCode] = useState("");
   const [chartData, setChartData] = useState({ datasets: [] });
   const [label, setLabel] = useState([]);
   const [ylabel, setYlabel] = useState([]);
@@ -88,7 +88,7 @@ function SearchBar() {
                 data: ylabel,
                 backgroundColor: [`rgb(73, 85, 235)`],
                 borderColor: [`rgb(64, 172, 246)`],
-                borderWidth: 4,
+                borderWidth: 2,
               },
             ],
           });
@@ -148,6 +148,7 @@ function SearchBar() {
       </div>
       {/* For chart */}
       <div className={styles.chart_container}>
+        {countryCode && <h3>Your Code : {countryCode}</h3>}
         <div>
           <Line data={chartData} />
         </div>
